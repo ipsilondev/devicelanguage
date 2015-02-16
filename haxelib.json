@@ -6,7 +6,7 @@
   "description": "simple openfl lib to get the device language (supporting ios, android and html5 for now)",
   "version": "1.0.0",
   "releasenote": "",
-  "contributors": ["Ipsilon Developments Inc."],
+  "contributors": ["ipsilondev"],
   "dependencies": {
 
   }

@@ -7,7 +7,7 @@
 		<compilerflag value="-Iinclude"/>
 		
 		<file name="common/ExternalInterface.cpp"/>
-		<file name="common/SampleExtension.cpp"/>
+		<file name="common/DeviceLanguage.mm"/>
 		
 	</files>
 	
@@ -17,7 +17,7 @@
 	
 	<set name="DEBUGEXTRA" value="-debug" if="fulldebug" />
 	
-	<target id="NDLL" output="${LIBPREFIX}sampleextension${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
+	<target id="NDLL" output="${LIBPREFIX}devicelanguage${MSVC_LIB_VERSION}${DEBUGEXTRA}${LIBEXTRA}" tool="linker" toolid="${STD_MODULE_LINK}">
 		
 		<outdir name="../ndll/${BINDIR}"/>
 		<ext value=".ndll" if="windows || mac || linux"/>

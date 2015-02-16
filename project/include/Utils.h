@@ -5,7 +5,7 @@
 namespace devicelanguage {
 	
 	
-	int GetLang();
+	const char* GetLang();
 	
 	
 }

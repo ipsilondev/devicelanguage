@@ -1,0 +1,13 @@
+{
+  "name": "devicelanguage",
+  "url": "https://github.com/ipsilondev/devicelanguage",
+  "license": "MIT",
+  "tags": ["language","cross","android","ios","html5"],
+  "description": "simple openfl lib to get the device language (supporting ios, android and html5 for now)",
+  "version": "1.0.0",
+  "releasenote": "",
+  "contributors": ["Ipsilon Developments Inc."],
+  "dependencies": {
+
+  }
+}

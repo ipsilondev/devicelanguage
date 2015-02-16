@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<ndll name="devicelanguage" if="ios" />
+	
+	<!-- Use the following for an Android Java extension, not needed otherwise -->
+	
+	<dependency name="devicelanguage" path="dependencies/devicelanguage" if="android" />
+	<android extension="com.devicelanguage.DeviceLanguage" />
+	
+</project>

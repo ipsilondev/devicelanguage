@@ -19,7 +19,7 @@ How to use
 First of all, install the lib:
 
 ```bash
-haxelib install openfl-gpg
+haxelib install devicelanguage
 ```
 
 Once this is done, you just need to add this to your project.xml

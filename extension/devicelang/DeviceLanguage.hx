@@ -1,5 +1,9 @@
 package extension.devicelang;
 
+#if flash
+import flash.system.Capabilities;
+#end
+
 #if cpp
 import cpp.Lib;
 #elseif neko
@@ -28,6 +32,14 @@ class DeviceLanguage {
 		
 		return untyped __js__("navigator.language || navigator.userLanguage");
 		
+		#elseif flash
+		
+		return Capabilities.language;
+		
+		#elseif (windows || linux)
+		
+		return DeviceLanguage_cpp_getLang();
+		
 		#else
 		
 		return "null";
@@ -42,6 +54,10 @@ class DeviceLanguage {
 	
 	#if (android && openfl)
 	private static var DeviceLanguage_android_getLang = JNI.createStaticMethod ("com.devicelanguage.DeviceLanguage", "getLang", "()Ljava/lang/String;",true);
+	#end
+	
+	#if (windows || linux)
+	private static var DeviceLanguage_cpp_getLang:Void->String = Lib.load("devicelanguage","getLang",0);
 	#end
 	
 	

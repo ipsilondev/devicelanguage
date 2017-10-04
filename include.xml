@@ -2,6 +2,8 @@
 <project>
 	
 	<ndll name="devicelanguage" if="ios" />
+	<ndll name="devicelanguage" if="windows" />
+	<ndll name="devicelanguage" if="linux" />
 	
 	<!-- Use the following for an Android Java extension, not needed otherwise -->
 	

@@ -1,7 +1,7 @@
 Device Language
 ==========
 
-Simple extension for OpenFL that returns the language of the device where the app is running. Supporting currently HTML5, iOS and Android targets (contribution for desktop targets is welcome)
+Simple extension for OpenFL that returns the language of the device where the app is running. Supporting currently HTML5, Flash, Windows, Linux, iOS and Android targets (contribution for missing targets is welcome)
 
 ### With love from:
 
@@ -37,4 +37,4 @@ var lang:String = DeviceLanguage.getLang();
 
 ```
 
-returns a string representing the language in [ISO-639-1 format](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for Android and iOS target and in similar way, for html5 target, just that also includes the country (for example, Android and iOS would return "en" for english, and in html5 could return "en-US" for example)
+returns a string representing the language in [ISO-639-1 format](http://en.wikipedia.org/wiki/List_of_ISO_639-1_codes) for Flash, Windows, Linux, Android and iOS target and in similar way, for html5 target, just that also includes the country (for example, Android would return "en" for english, and in html5 could return "en-US")
